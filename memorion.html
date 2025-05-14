@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Memorión - Ranking</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Fondo de partículas -->
+  <div id="particles-js"></div>
+
+  <!-- Encabezado con menú -->
+  <header>
+    <h1>Memorión</h1>
+    <nav>
+      <div class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="menu" id="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="curso.html">El Curso</a></li>
+        <li><a href="asignaturas.html">Asignaturas</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="memorion.html">Memorión</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+    <section>
+      <h2><i class="fas fa-gamepad"></i> ¿Qué es Memorión?</h2>
+      <p><strong>Memorión</strong> es un juego de memoria en el que tienes que voltear cartas y encontrar las parejas lo más rápido posible.</p>
+      <p>Este proyecto fue desarrollado por estudiantes como ejercicio práctico para aplicar conocimientos de programación y diseño web usando <strong>HTML, CSS y JavaScript</strong>.</p>
+    </section>
+
+    <section class="ranking-container">
+      <h2><i class="fas fa-trophy"></i> Clasificación de jugadores</h2>
+      <p>Estos son los mejores tiempos registrados por los jugadores de Memorión:</p>
+    
+      <table class="ranking epic">
+        <thead>
+          <tr>
+            <th>Posición</th>
+            <th>Usuario</th>
+            <th>Tiempo (s)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="gold">
+            <td>🥇</td>
+            <td>x</td>
+            <td>x</td>
+          </tr>
+          <tr class="silver">
+            <td>🥈</td>
+            <td>x</td>
+            <td>x</td>
+          </tr>
+          <tr class="bronze">
+            <td>🥉</td>
+            <td>x</td>
+            <td>x</td>
+          </tr>
+          <tr>
+            <td>4º</td>
+            <td>x</td>
+            <td>x</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 - DAW Informática - I.E.S. La Marisma</p>
+  </footer>
+
+  <!-- Partículas JS -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 60 },
+        size: { value: 3 },
+        move: { speed: 1 },
+        line_linked: { enable: true }
+      }
+    });
+
+    // Menú hamburguesa
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
+  </script>
+
+</body>
+</html>
